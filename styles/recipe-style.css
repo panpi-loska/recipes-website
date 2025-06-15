@@ -1,40 +1,77 @@
 
 
+         *, 
+         *::after, 
+         *::before {
+            box-sizing: border-box;
+            margin: 0;
+         }
+
+          body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.5em;
+          }
+         
+         
          .main-content {
-            margin-left: 12vw;
-            margin-right: 12vw;
             text-align: justify;
             align-items: center;
             color: black;
-            box-sizing: border-box;
-            width: 75vw;
+            width: 50vw;
+            margin: 0 auto;
+            margin-top: 1em;
+            margin-bottom: 1em;
           }
 
-          .sidebar {
-            position: fixed;
+          .main-content * {
+            margin-bottom: 0.8vh;
+            margin-top: 0.8vh;
+          }
+
+
+          .img-resize img {
+            width: 80%;
+            margin: 0 auto;
+            align-content: center;
+            display: block;
+            margin-bottom: 1em;
+            margin-top: 1em;
+          }
+
+          .top-bar {
+            width: 100vw;
+            height: 5vh;
+            text-align: center;
+            background-color: beige;
+            margin-bottom: 2em;
+          }
+
+          .bar-items div {
+            display: inline-block;
+            height: 5vh;
+            align-content: center;
+            padding-left: 4em;
+            padding-right: 4em;
+            color:black;
+            font-weight: 900;
+            font-size: 1.9vh;
+          }
+
+          .bar-items div:hover {
+            background-color: rgb(185, 185, 164)
+          }
+
+
+          .center-logo img{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
             top: 0;
-            left: 0;
-            width: 10vw;
-            height: 100vh;
-            background-color: white;
-            color: black;
-            padding: 0vw;
-            box-sizing: border-box;
+            height: 5vh;
           }
-
-          .img-resize {
-            width: 75vw;
-            max-width: 700px;
-          }
-
-          .sidebar-list li {
-            border-right: 2px solid black;
-            
-            padding: 15px;
-          }
-
-            @media (max-width: 1360px) {
-            .sidebar {
-                display: none;
+          
+        @media (max-width: 1360px) {
+          .main-content {
+            width: 80vw;
             }
           }
